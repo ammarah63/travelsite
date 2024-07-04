@@ -43,6 +43,7 @@ const Category = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
               {Categories.map((categories) => (
                 <CategoryCard
+                  key={categories.heading}
                   image={categories.image}
                   heading={categories.heading}
                   caption={categories.caption}

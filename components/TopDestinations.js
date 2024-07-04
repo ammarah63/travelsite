@@ -35,6 +35,7 @@ const TopDestinations = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 my-10 3xl:my-20 gap-16 px-10">
             {Destination.map((destination) => (
               <DestinationCard
+                key={destination.id}
                 location={destination.location}
                 image={destination.image.src}
                 cost={destination.cost}
