@@ -33,13 +33,25 @@ const Category = () => {
     <>
       <div className="lg:h-screen -mt-[70rem] md:-mt-96 3xl:-mt-[40rem] 4xl:-mt-[50rem] ">
         <div className="text-center lg:h-screen ">
-          <p className="text-xl 3xl:text-3xl 4xl:text-4xl text-gray-600 py-5 3xl:py-10">
+          <p
+            data-aos="fade-up"
+            data-aos-once="true"
+            className="text-xl 3xl:text-3xl 4xl:text-4xl text-gray-600 py-5 3xl:py-10"
+          >
             CATEGORY
           </p>
-          <p className="text-5xl 3xl:text-7xl 4xl:text-9xl font-black heading">
+          <p
+            data-aos="fade-up"
+            data-aos-once="true"
+            className="text-5xl 3xl:text-7xl 4xl:text-9xl font-black heading"
+          >
             We Offer Best Services
           </p>
-          <div className="flex justify-center py-14 3xl:py-28">
+          <div
+            data-aos="fade-up"
+            data-aos-once="true"
+            className="flex justify-center py-14 3xl:py-28"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
               {Categories.map((categories) => (
                 <CategoryCard

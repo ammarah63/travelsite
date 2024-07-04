@@ -26,13 +26,25 @@ const TopDestinations = () => {
     return (
       <>
         <div className="text-center mt-20 lg:h-screen  2xl:px-20 ">
-          <p className="text-xl text-gray-600 py-5 3xl:py-10 3xl:text-3xl 4xl:text-4xl">
+          <p
+            data-aos="fade-up"
+            data-aos-once="true"
+            className="text-xl text-gray-600 py-5 3xl:py-10 3xl:text-3xl 4xl:text-4xl"
+          >
             Top Selling
           </p>
-          <p className="text-5xl font-black 3xl:text-7xl 4xl:text-9xl heading">
+          <p
+            data-aos="fade-up"
+            data-aos-once="true"
+            className="text-5xl font-black 3xl:text-7xl 4xl:text-9xl heading"
+          >
             Top Destinations
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 my-10 3xl:my-20 gap-16 px-10">
+          <div
+            data-aos="fade-up"
+            data-aos-once="true"
+            className="grid grid-cols-1 lg:grid-cols-3 my-10 3xl:my-20 gap-16 px-10"
+          >
             {Destination.map((destination) => (
               <DestinationCard
                 key={destination.id}

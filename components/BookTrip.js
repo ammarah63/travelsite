@@ -10,7 +10,7 @@ const BookTrip = () => {
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 h-full gap-4 px-10 2xl:px-28 mt-52 3xl:mt-32 4xl:mt-32 ">
-        <div>
+        <div data-aos="fade-left" data-aos-once="true">
           <p className="text-xl text-[#5e6282] font-bold 3xl:text-3xl 4xl:text-4xl">
             Easy and Fast
           </p>
@@ -59,7 +59,11 @@ const BookTrip = () => {
             </p>
           </div>
         </div>
-        <div className="md:ml-auto relative md:pe-32 mt-24">
+        <div
+          data-aos="fade-right"
+          data-aos-once="true"
+          className="md:ml-auto relative md:pe-32 mt-24"
+        >
           <div className="bg-white shadow-customBook w-[20rem] md:w-full 3xl:w-[24vw] rounded-3xl h-11/12 p-5">
             <Image src={pic4} className="3xl:w-full" />
             <div className="my-3 space-y-2 mt-5 mx-2">

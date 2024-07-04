@@ -2,12 +2,14 @@ import Image from "next/image";
 import logo from "../public/assets/Logo.svg";
 import { useState } from "react";
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+
+const Header = () => {
+   const [isOpen, setIsOpen] = useState(false);
+
+   const toggleMenu = () => {
+     setIsOpen(!isOpen);
+   };
   return (
     <>
       <div className="pt-3 lg:py-6 px-5 lg:px-10 flex items-center justify-between relative">
@@ -44,7 +46,7 @@ const Header = () => {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } lg:hidden mt-2 absolute bg-[#f1a501] bg-opacity-95 py-5 top-full left-0 right-0`}
+          } lg:hidden dropdown_menu mt-2 absolute bg-[#f1a501] bg-opacity-95 py-5 top-full left-0 right-0`}
         >
           <div className="flex flex-col text-lg space-y-8 items-center">
             <p className="cursor-pointer">Destinations</p>

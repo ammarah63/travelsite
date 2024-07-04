@@ -8,7 +8,11 @@ const HomeSection = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row">
-        <div className="px-5 lg:px-10 py-20 3xl:py-36 4xl:py-48 space-y-5 3xl:space-y-10 md:w-[60.5vw] 3xl:w-[45vw]">
+        <div
+          data-aos="fade-left"
+          data-aos-once="true"
+          className="px-5  lg:px-10 py-20 3xl:py-36 4xl:py-48 space-y-5 3xl:space-y-10 md:w-[60.5vw] 3xl:w-[45vw]"
+        >
           <p className="font-extrabold text-[#DF6951] text-sm lg:text-lg 3xl:text-2xl ">
             BEST DESTINATIONS AROUND THE WORLD
           </p>
@@ -33,7 +37,7 @@ const HomeSection = () => {
             west hard for the.
           </p>
           <div className="flex">
-            <button className="bg-[#f1a501] text-white shadow-2xl px-6 me-10 py-4 rounded-2xl text-sm lg:text-lg 3xl:text-2xl 3xl:py-8 3xl:px-8">
+            <button className="bg-[#f1a501] text-white shadow-2xl p-3 md:px-6 me-10 py-4 rounded-2xl text-sm lg:text-lg 3xl:text-2xl 3xl:py-8 3xl:px-8">
               Find out more
             </button>
             <button className="text-sm lg:text-lg text-[#686d77] 3xl:text-2xl flex items-center">
@@ -68,7 +72,7 @@ const HomeSection = () => {
               zIndex: -1,
             }}
           >
-            <div className="">
+            <div data-aos="fade-right" data-aos-once="true" className="">
               <Image
                 src={pic2}
                 width={100}

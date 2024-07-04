@@ -10,7 +10,11 @@ const Testimonials = () => {
   return (
     <>
       <div className="flex flex-col lg:flex-row space-y-16 px-2 md:px-10 h-full 2xl:px-28 mt-52 3xl:mt-72">
-        <div className="w-full text-center lg:text-left  lg:w-6/12">
+        <div
+          data-aos="fade-left"
+          data-aos-once="true"
+          className="w-full text-center lg:text-left  lg:w-6/12"
+        >
           <p className="text-base lg:text-xl 3xl:text-3xl 4xl:text-4xl text-[#5e6282] font-bold">
             Testimonials
           </p>
@@ -19,11 +23,15 @@ const Testimonials = () => {
             <br /> About Us
           </p>
         </div>
-        <div className="w-full lg:w-8/12 lg:px-5">
+        <div
+          data-aos="fade-right"
+          data-aos-once="true"
+          className="w-full lg:w-8/12 lg:px-5"
+        >
           <Testimonialslider />
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-once="true">
         <div className="grid grid-cols-1 lg:grid-cols-5 px-10 py-16 gap-14">
           <div className="flex justify-center filter grayscale hover:filter-none hover:shadow-custom hover:bg-white rounded-3xl py-5 mx-6">
             <Image
