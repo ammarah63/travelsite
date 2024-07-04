@@ -1,13 +1,13 @@
 import Image from "next/image";
-import logo from "../public/assets/logo.svg";
+import logo from "../public/assets/Logo.svg";
 import { useState } from "react";
 
 const Header = () => {
-   const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-   const toggleMenu = () => {
-     setIsOpen(!isOpen);
-   };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <div className="pt-3 lg:py-6 px-5 lg:px-10 flex items-center justify-between relative">
